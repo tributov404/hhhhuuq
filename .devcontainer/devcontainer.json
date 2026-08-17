@@ -1,10 +1,13 @@
 {
-  "name": "macOS 26 (Tahoe)",
+  "name": "macOS 15 (Sequoia)",
   "service": "macos",
   "containerEnv": {
-    "VERSION": "26"
+    "VERSION": "15",
+    "DISK_SIZE": "64G"
   },
-  "forwardPorts": [8006],
+  "forwardPorts": [
+    8006
+  ],
   "portsAttributes": {
     "8006": {
       "label": "Web",
@@ -13,7 +16,7 @@
   },
   "otherPortsAttributes": {
     "onAutoForward": "ignore"
-  }, 
+  },
   "dockerComposeFile": "codespaces.yml",
   "initializeCommand": "docker system prune --all --force"
 }
